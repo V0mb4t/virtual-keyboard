@@ -1,0 +1,42 @@
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.key.pressed {
+  background-color: lightgray;
+  transform: scale(0.9);
+}
+
+.key {
+  background-color: #3a424e;
+  color: white;
+  margin: 2px;
+  transition: all .2s ease;
+}
+
+.key:active {
+  background-color: lightgray;
+  transform: scale(0.9);
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.key[value=Space] {
+  width: 100%;
+}
+
+.key[value=Shift] {
+  width: 20%;
+}
+
+.key[value=Tab] {
+  width: 15%;
+}

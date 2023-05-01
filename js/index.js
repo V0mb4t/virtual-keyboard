@@ -55,7 +55,6 @@ class VirtualKeyboard {
           this.textarea.value += key.toLowerCase();
         }
       }
-      event.target.classList.add('pressed');
     });
 
     this.keyboard.addEventListener('mouseup', (event) => {
